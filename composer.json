@@ -1,0 +1,40 @@
+{
+    "name": "laracodedeveloper/laraserve-windows",
+    "description": "A more enjoyable local development experience for Windows.",
+    "keywords": ["laravel", "laraserve", "windows"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sami Maxhuni",
+            "email": "samimaxhuni510@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Laraserve\\": "cli/Laraserve/"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "illuminate/container": "~5.1",
+        "mnapoli/silly": "~1.0",
+        "symfony/process": "~2.7|~3.0|~4.0|~5.0",
+        "nategood/httpful": "~0.2",
+        "tightenco/collect": "^5.2",
+        "phpseclib/phpseclib": "^2.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload-dev": {
+        "files": [
+            "cli/includes/compatibility.php",
+            "cli/includes/facades.php",
+            "cli/includes/helpers.php"
+        ]
+    },
+    "bin": [
+        "laraserve"
+    ]
+}
