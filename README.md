@@ -34,8 +34,12 @@ Laraserve will automatically start its daemon each time your machine boots. Ther
 ## Known Issues
 
 - When sharing sites the url will not be copied to the clipboard.
-- You must run the `laraserve` commands from the drive where Laraserve is installed, except for park and link. See [#12](https://github.com/laracodedeveloper/laraserve-windows/issues/12#issuecomment-283111834).
+- You must run the `laraserve` commands from the drive where Laraserve is installed, except for park and link.
 - If your machine is not connected to the internet you'll have to manually add the domains in your `hosts` file or you can install the "Microsoft Loopback Adapter" as this simulates an active local network interface that Laraserve can bind too.
+
+## Laraserve park or link folder
+- You have to run all the Laraserve commands that restart a service from the C drive (eg: `laraserve install`, `laraserve start`, `laraserve restart`, `laraserve stop`).
+- But you can still run `laraserve park folder` / `laraserve link folder` from the D drive but if you want to secure a domain you'll have to run laraserve secure some-site from the C drive.
 
 ## Useful Links
 
